@@ -382,6 +382,54 @@ a{
     align-items: center;
     
 }
+.cont81 h2{
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Mukta", sans-serif;
+    color: brown;
+
+}
+.pay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3%;
+    
+}
+.pay div{
+    margin-left: 25px;
+}
+.pay input{
+    width: 80%;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.pay label{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.pay h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Mukta", sans-serif;
+    color: rgba(160, 93, 11, 0.739);
+}
+.pay div div input{
+    width: 25%;
+    margin-top: 15px;
+}
+.pay div div label{
+    display: inline;
+}
+.payButt{
+    background-color: rgba(160, 93, 11, 0.739);
+    color: white;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
 
 
 @media (max-width:600px){
@@ -406,7 +454,7 @@ a{
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
-        height: 40vh;
+        height: 50vh;
     }
     .card-cont{
         display: grid;
@@ -445,13 +493,32 @@ a{
     .cont13{
         display: block;
     }
+    .cont22{
+        display: block;
+    }
+    .cont22 div img{
+        width: 100%;
+    }
     .cont23{
         display: block;
     }
     .cont27{
         display: block;
     }
-   
+   .pay{
+    display: block;
+
+   }
+   .pay div{
+    margin-bottom: 15px;
+   }
+   .pay label{
+    
+    padding-top: 8px;
+}
+.pay input{
+    width: 75%;
+}
 }
 
 @media (max-width:440px){
@@ -465,5 +532,53 @@ a{
      background-position-x: -300px;
      background-size: cover;
      background-repeat: no-repeat;
+    }
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container1 .heading{
+    width: 50%;
+    border-bottom: 1px solid black;
+}
+.heading h2{
+    margin-top: 63px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    
+    
+}
+.heading h2 span{
+    font-weight: 100;
+    /* padding-bottom: 25px; */
+}
+.container1 .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.container1 .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 33.5%;
+}
+.container1 .box .dream img{
+    width: 100%;
+}
+
+@media screen and (max-width:769px){
+    .container1 .box{
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    .container1 .box .dream{
+        width: 100%;
     }
 }
